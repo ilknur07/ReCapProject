@@ -36,6 +36,8 @@ namespace ConsoleUI
             Console.WriteLine("Description : " + car1.Description);
             Console.WriteLine("Price of the car : " + car1.DailyPrice);
             Console.WriteLine("------------------------------------");
+            carManager.Delete(car1);
+            
 
             Car car2 = new Car
             {
@@ -53,7 +55,10 @@ namespace ConsoleUI
             Console.WriteLine("Description : " + car2.Description);
             Console.WriteLine("Price of the car : " + car2.DailyPrice);
             Console.WriteLine("------------------------------------");
+            carManager.Add(car2);
 
+
+            
 
 
 
