@@ -32,7 +32,7 @@ namespace Business.Concrete
         public void Update(Car car)
         {
             _carDal.Update(car);
-            Console.WriteLine("The Car with Id: " + car.Id + " was updated.");
+            Console.WriteLine("The Car with Id:" + car.Id + ", BrandId:" + car.BrandId + ", ModelYear:" + car.ModelYear +", Price:"+ car.DailyPrice + " and the Description:" +car.Description + " was updated.");
         }
         public List <Car> GetByID(int Id)
         {
