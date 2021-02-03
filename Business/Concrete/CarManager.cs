@@ -36,7 +36,9 @@ namespace Business.Concrete
         }
         public List <Car> GetByID(int Id)
         {
+            Console.WriteLine("This is the car you are looking for:");
             return _carDal.GetById(Id);
+            
         }
     }
 }

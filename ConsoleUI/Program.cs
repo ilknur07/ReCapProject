@@ -21,6 +21,19 @@ namespace ConsoleUI
                 Console.WriteLine("Price of the car:" + car.DailyPrice);
                 Console.WriteLine("------------------------------------");
             }
+
+            Console.WriteLine("====================================");
+            foreach (var car in carManager.GetByID(2))
+            {
+                Console.WriteLine("Id of the car:" + car.Id);
+                Console.WriteLine("BrandId of the car:" + car.BrandId);
+                Console.WriteLine("Model Year of the car:" + car.ModelYear);
+                Console.WriteLine("Description :" + car.Description);
+                Console.WriteLine("Price of the car:" + car.DailyPrice);
+                Console.WriteLine("------------------------------------");
+
+            };
+
             Car car1 = new Car
             {
                 Id = 5,
@@ -39,7 +52,6 @@ namespace ConsoleUI
             Console.WriteLine("Price of the car:" + car1.DailyPrice);
             Console.WriteLine("------------------------------------");
             carManager.Delete(car1);
-            
 
             Car car2 = new Car
             {
@@ -60,10 +72,10 @@ namespace ConsoleUI
             Console.WriteLine("------------------------------------");
             carManager.Add(car2);
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
-            carManager.Update(new Car {Id=1, BrandId = 3, ModelYear = 2021, DailyPrice = 70000, Description = "'FIRST CAR OF THE YEAR'" });
-
+            carManager.Update(new Car {Id = 1, BrandId = 3, ModelYear = 2021, DailyPrice = 70000, Description = "'FIRST CAR OF THE YEAR'" });
 
             
+
 
 
 
